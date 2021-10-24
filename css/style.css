@@ -489,6 +489,11 @@ body {
     align-items: center;
 }
 
+.footer-navigation {
+    margin-top: 8px;
+    margin-left: 3px;
+}
+
 .footer-logo {
     margin-right: 50px;
 }
@@ -497,16 +502,21 @@ body {
     font-size: 16px;
     line-height: 23px;
     color: #000000;
-    margin-right: 50px;
+    margin-right: 46px;
 }
 
 .social-links {
     display: flex;
     align-items: center;
     margin-left: auto;
+    margin-top: 12px;
 }
 
 .social-link {
     margin-right: 20px;
     text-decoration: none;
+}
+
+.social-link:last-child {
+    margin-right: 0;
 }
