@@ -104,7 +104,26 @@ body {
 
 .slide-content {
     position: relative;
-    max-width: 400px;
+    max-width: 460px;
+}
+
+.slider-buttons {
+    width: 97px;
+    position: absolute;
+    right: 46px;
+    bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 9;
+}
+
+.slider-button {
+    cursor: pointer;
+}
+
+.swiper {
+    position: relative;
 }
 
 .slide-title {
@@ -113,6 +132,7 @@ body {
     font-weight: bold;
     font-size: 50px;
     line-height: 51px;
+
 }
 
 .slide-text {
@@ -145,6 +165,16 @@ body {
 
 .slide-summer {
     background: url('../img/summer.png') no-repeat;
+    background-size: cover;
+}
+
+.slide-autumn {
+    background: url('../img/autumn.png') no-repeat;
+    background-size: cover;
+}
+
+.slide-vitamin {
+    background: url('../img/vitamin.png') no-repeat;
     background-size: cover;
 }
 
@@ -519,4 +549,98 @@ body {
 
 .social-link:last-child {
     margin-right: 0;
+}
+
+@media (max-width: 1260px) {
+    .container {
+        max-width: 960px;
+    }
+
+    .search-form {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    .tabs-card {
+        flex: 50%;
+        max-width: calc(50% - 37px);
+    }
+
+    .benefits-cards {
+        flex-wrap: wrap;
+    }
+
+    .benefits-card {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 750px;
+    }
+
+    .slide {
+        padding: 70px;
+    }
+
+    .delivery-card {
+        width: calc(50% - 30px);
+    }
+
+    .benefits-cards {
+        justify-content: space-around;
+    }
+
+    .footer-logo {
+        margin-right: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 560px;
+    }
+
+    .header {
+        flex-wrap: wrap;
+    }
+
+    .search-form {
+        order: 5;
+        margin-left: 1px;
+        margin-right: 1px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .promo {
+        flex-wrap: wrap;
+    }
+
+    .benefits {
+        padding: 100px 0 82px
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        max-width: 90%;
+    }
+
+    .slide-title {
+        font-size: 40px;
+    }
+
+    .delivery-card {
+        width: 100%;
+    }
+
+    .tabs-link {
+        margin-right: 20px;
+    }
+
+    .tabs-card {
+        max-width: 100%;
+    }
 }
